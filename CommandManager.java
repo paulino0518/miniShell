@@ -12,19 +12,20 @@ public class CommandManager {
         entry(0, c -> {
             String question = "Change directory to the parent of your current directory.";
             string answer = "cd ..";
-
+            
+            return [question, answer];
             //How will we get the question? pass the user input ane compare it to answer. 
             
         }),
         entry("ls", c -> System.out.println("ls needs to be made"))
     );
 
-    public void getCommand(String command){
+    public void getQuestion(String command){
         if(!commands.containsKey(command)){
             System.out.println("Invalid command");
         } else {
-            commands.get(command);
-            //.accept(command); after we have made it multi item input
+            commands.get(command).accept(;
+            
         }
     }
 
