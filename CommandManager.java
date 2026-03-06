@@ -6,8 +6,13 @@ import static java.util.Map.entry;
 
 public class CommandManager {
     
-    Map<String, Consumer<String>> commands = Map.ofEntries(
-        entry("hello", c -> System.out.println("Hello world")),
+    Map<int, Consumer<String>> commands = Map.ofEntries(
+        entry(0, c -> {
+            String question = "Change directory to the parent of your current directory.";
+            string answer = "cd ..";
+
+            //How will we get the question?
+        }),
         entry("ls", c -> System.out.println("ls needs to be made"))
     );
 
