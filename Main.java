@@ -1,6 +1,11 @@
+import java.util.Scanner;
 public class Main{
 
+    
+
     public void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+    
         //I want to have a loop to run the program and if you type quit it will exit or whatever command Linux uses. 
 
         CommandManager commandManager = new CommandManager();
@@ -10,7 +15,9 @@ public class Main{
 
         for(int i = 0; i < numberOfQuestions; i++){
             //Call the question 
-            System.out.println(commandManager.getQuestion(i));
+            String userInput = scanner.nextLine();
+            System.out.println(commandManager.getQuestion(i)[0]);
+            if(userInput.equals(commamdManager.getQuestion(i)[1])){}
             
             
             
