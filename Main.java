@@ -10,7 +10,7 @@ public class Main{
 
         for(int i = 0; i < numberOfQuestions; i++){
             //Call the question 
-            System.our.println(commandManager.getQuestion());
+            System.out.println(commandManager.getQuestion(i));
             
             
             
