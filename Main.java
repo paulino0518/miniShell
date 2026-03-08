@@ -31,6 +31,9 @@ public class Main {
                 //Comparison
                 if(questionBank[i][1].equals(userInput)){
                     answerIsCorrect = true;
+                } else {
+                    System.out.print("Wrong > "));
+                    continue
                 }
             }
             //Once it is correct
