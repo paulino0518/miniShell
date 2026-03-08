@@ -14,12 +14,27 @@ public class Main {
         };
 
         String userInput;
-        
-        //This will be used in the conditional statement when choosing wether or not we are moving on Or the question is repeated.
-        Bool answerIsCorrect;
 
         for(int i = 0; i < questionBank.length; i++){
+            //This will be used in the conditional statement when choosing wether or not we are moving on Or the question is repeated.
+            Bool answerIsCorrect = false;
+            
             if(userInput.equals("exit")){ break; }
+            while(!answerIsCorrect){
+                //While the answer is not correct this is where the input, reply loop is.
+                //Print question
+                System.out.println(questionBank[i][0]);
+                //Print terminal area
+                System.out.print("> ");
+                //Grab user string and compare
+                userInput = scanner.nextLine();
+                //Comparison
+                if(questionBank[i][1].equals(userInput)){
+                    answerIsCorrect = true;
+                }
+            }
+            //Once it is correct
+            System.out.println("CORRECT");
         }
 
         //This runs once the questions are over.
