@@ -18,9 +18,8 @@ public class Main {
         //This will be used in the conditional statement when choosing wether or not we are moving on Or the question is repeated.
         Bool answerIsCorrect;
 
-        while(!userInput.equals("exit")){
-            //This runs until exit is typed.
-            //Prints the question one by one, until the end.
+        for(int i = 0; i < questionBank.length; i++){
+            if(userInput.equals("exit")){ break; }
         }
 
         //This runs once the questions are over.
