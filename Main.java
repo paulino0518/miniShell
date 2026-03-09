@@ -9,6 +9,7 @@ public class Main {
             new String[]{"Make a directory called fruits", "mkdir fruits"}
         };
 
+        outerLoop:
         for(int i = 0; i < questionBank.length; i++){
             boolean answerIsCorrect = false;
 
@@ -19,17 +20,16 @@ public class Main {
 
                 String userInput = scanner.nextLine();
 
-                if(userInput.equals("exit")){ break; }
+                if(userInput.equals("exit")){ break outerLoop; }
                 
                 if(questionBank[i][1].equals(userInput)){
+                    System.out.println("Correct");
                     answerIsCorrect = true;
                 } else {
                     System.out.println("Wrong");
                     continue;
                 }
             }
-            //Once it is correct
-            System.out.println("CORRECT");
         }
 
         //This runs once the questions are over.
