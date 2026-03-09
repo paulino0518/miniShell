@@ -14,6 +14,7 @@ public class Main {
             boolean answerIsCorrect = false;
 
             while(!answerIsCorrect){
+            System.out.println("---");
             System.out.println(questionBank[i][0]);
                 //Print terminal area
                 System.out.print("> ");
@@ -23,10 +24,10 @@ public class Main {
                 if(userInput.equals("exit")){ break outerLoop; }
                 
                 if(questionBank[i][1].equals(userInput)){
-                    System.out.println("Correct");
+                    System.out.println("\n" + "Correct" + "\n");
                     answerIsCorrect = true;
                 } else {
-                    System.out.println("Wrong");
+                    System.out.println("\n" + "Wrong" + "\n");
                 }
             }
         }
