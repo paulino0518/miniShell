@@ -27,7 +27,6 @@ public class Main {
                     answerIsCorrect = true;
                 } else {
                     System.out.println("Wrong");
-                    continue;
                 }
             }
         }
