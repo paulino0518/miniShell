@@ -6,7 +6,8 @@ public class Main {
         
         String[][] questionBank = {
             new String[]{"If you are lost on which directory you are in, how can you figure it out with one single command that is 3 letters long?", "pwd"},
-            new String[]{"Make a directory called fruits", "mkdir fruits"}
+            new String[]{"Make a directory called fruits", "mkdir fruits"},
+            new String[]{"How can you use mv to rename the file called file to fill?", "mv file ./fill"}
         };
 
         outerLoop:
